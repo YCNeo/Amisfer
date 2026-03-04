@@ -18,6 +18,6 @@ def main(sentence):
     return translate_chinese_to_amis(sentence, results)
 
 
-client = gr.Interface(fn=main, inputs="text", outputs="text", title="Amis Translator")
+client = gr.Interface(fn=main, inputs="text", outputs="text", title="Amis Translator", flagging_mode="never")
 
 client.launch()
